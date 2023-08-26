@@ -1,0 +1,7 @@
+docker compose -f docker-compose.dev.yml up
+docker container ls
+docker exec -it f3b2da4220da mongosh -u root -p example
+show dbs
+use the_database
+show collections
+db.todos.insertOne({ text: "Increase the number of tools in my toolbelt", done: false })
