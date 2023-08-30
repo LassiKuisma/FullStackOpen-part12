@@ -37,7 +37,7 @@ describe('todo component', () => {
     expect(deleteTodo.mock.calls).toHaveLength(1);
   });
 
-  test('this test fails', () => {
-    expect(1 + 1).toEqual(3);
+  test('this test passes', () => {
+    expect(1 + 1).toEqual(2);
   });
 });
