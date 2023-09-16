@@ -1,6 +1,12 @@
 version: '3.8'
 
 services:
+  app:
+    build:
+      context: ./frontend
+      dockerfile: dev.Dockerfile
+    ports:
+      - 19006:19006
   server:
     build:
       context: ./backend
