@@ -7,6 +7,8 @@ services:
       dockerfile: dev.Dockerfile
     ports:
       - 19006:19006
+    volumes:
+      - ./frontend/src/:/usr/src/app/src
   server:
     build:
       context: ./backend
